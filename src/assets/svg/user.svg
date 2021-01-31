@@ -1,0 +1,7 @@
+<!doctype html>
+<svg viewBox="3.5 1.5 13 17" width="13" height="17">
+    <rect fill="none" stroke="#000" x="3.5" y="1.5" width="13" height="17"></rect>
+    <rect x="5.645" y="3.659" width="8.642" height="6.242" style="stroke: rgb(0, 0, 0); fill: none;"></rect>
+    <line style="stroke: rgb(0, 0, 0);" x1="5.163" y1="12.367" x2="13.045" y2="12.317"></line>
+    <line style="stroke: rgb(0, 0, 0);" x1="5.163" y1="14.468" x2="12.096" y2="14.451"></line>
+</svg>

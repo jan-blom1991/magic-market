@@ -1,0 +1,50 @@
+<div class="">
+    <form>
+        <div class="">
+            <div class="">
+                <label class="form-label">Product name</label>
+                <input type="text" class="form-control" name="name" [(ngModel)]="product.name">
+            </div>
+            <div class="">
+                <label class="form-label">Product category</label>
+                <select class="form-select" name="category" [(ngModel)]="product.category">
+                    <option>Single card</option>
+                    <option>Booster pack</option>
+                    <option>Booster box</option>
+                    <option>Fat pack</option>
+                    <option>Starter deck</option>
+                    <option>Accessory</option>
+                </select>
+            </div>
+            <div class="">
+                <div class="">
+                    <label class="form-label">Product stock</label>
+                    <div class="input-group">
+                        <span class="input-group-text">#</span>
+                        <input type="text" class="form-control" name="stock" [(ngModel)]="product.stock">
+                    </div>
+                </div>
+                <div class="">
+                    <label class="form-label">Product price</label>
+                    <div class="input-group">
+                        <span class="input-group-text">€</span>
+                        <input type="text" class="form-control" name="price" [(ngModel)]="product.price">
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <label class="form-label">Upload image</label>
+                <input type="file" class="form-control" data-show-caption="true" data-browse-on-zone-click="true">
+                <!-- <img [src]="url" height="150"> -->
+            </div>
+            <div class="">
+                <label class="form-label">Product description</label>
+                <textarea class="form-control" aria-label="With textarea" name="description" [(ngModel)]="product.description"></textarea>
+            </div>
+
+            <div class="">
+                <input class="btn btn-primary" type="button" value="add product">
+            </div>
+        </div>
+    </form>
+</div>

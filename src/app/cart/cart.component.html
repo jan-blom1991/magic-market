@@ -1,0 +1,34 @@
+<div>
+    <div class = "title">
+        Shopping Cart
+    </div>
+
+    <form class="form">
+        <div class = "mb-3">
+            <input type="button" value="shopping cart list" class = "input-button">
+        </div>
+    </form>
+
+    <div class = "table-wrapper">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Sub-total</th>
+                <th>Remove</th>
+            </tr>
+        <tbody>
+            <tr *ngFor="let cartItem of cartItemList; index as i">
+                <td>{{cartItem.product.name}}</td>
+                <td>{{cartItem.product.category}}</td>
+                <td>{{cartItem.product.description}}</td>
+                <td>{{cartItem.quantity}}</td>
+                <td>{{cartItem.itemSubTotal}}</td>
+                <td><input type="button" value="remove" (click)="removeCartItem(i)"></td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+</div>

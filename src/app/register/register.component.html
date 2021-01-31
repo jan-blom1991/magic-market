@@ -1,0 +1,66 @@
+<div class="content">
+    <div class = "title">
+        Registration Form
+    </div>
+
+    <form #registerForm="ngForm" class="form">
+        <div class = "mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" class="input" name="name" [(ngModel)]="user.name">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Email Address</label>
+            <input type="text" class="input" name="emailAddress" [(ngModel)]="user.emailAddress">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Username</label>
+            <input type="text" class="input" name="username" [(ngModel)]="user.username">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="password" class="input" name="password" [(ngModel)]="user.password">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Confirm password</label>
+            <input type="password" class="input">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Bank account number (IBAN)</label>
+            <input type="text" class="input" name="bankAccountNumber" [(ngModel)]="user.bankAccountNumber">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Street address and number</label>
+            <input type="text" class="input"name="street" [(ngModel)]="address.street">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">City:</label>
+            <input type="text" class="input" name="city" [(ngModel)]="address.city">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">State</label>
+            <input type="text" class="input" name="state" [(ngModel)]="address.state">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Postal code</label>
+            <input type="text" maxlength=6 class = "input" name="postalCode" [(ngModel)]="address.postalCode">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Country</label>
+            <input type="text" class="input" name="country" [(ngModel)]="address.country">
+        </div>
+        <div class="check-field">
+            <label class="check">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="form-label">Agreed to the terms and conditions</label>
+        </div>
+        <div class="mb-3">
+            <input type="button" value="register" class="input-button">
+        </div>
+        <div class="text-field">
+            Already have an account? <a class="link" routerLink="/login"><b> Login </b></a> here!
+        </div>
+    </form>
+</div>
+
